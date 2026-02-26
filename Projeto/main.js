@@ -9,7 +9,11 @@ async function atualizar() {
         const dados = await buscarPreco()
 
        moedas = [
-        {nome: 'bitcoin', preco: dados.bitcoin.brl}
+        {nome: 'bitcoin', preco: dados.bitcoin.brl},
+        {nome: 'ethereum', preco: dados.ethereum.brl},
+        {nome: 'cardano', preco: dados.cardano.brl},
+        {nome: 'dogecoin', preco: dados.dogecoin.brl},
+        {nome: 'litecoin', preco: dados.litecoin.brl}
        ]
         console.log(moedas)
     } catch (err) {
